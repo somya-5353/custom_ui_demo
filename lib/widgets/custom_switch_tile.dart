@@ -5,8 +5,10 @@ class CustomSwitchTile extends StatelessWidget {
 
   final String title;
   final double fontSize;
+  final bool value;
+  final Function switchStateHandler;
 
-  CustomSwitchTile({this.title, this.fontSize});
+  CustomSwitchTile({this.title, this.fontSize, @required this.value, this.switchStateHandler});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,8 @@ class CustomSwitchTile extends StatelessWidget {
             )
           ),
           AnimatedSwitch(
-            height: 30.0, width: 60.0, padding: 3.0, toggleSize: 25.0, borderRadius: 20.0,
+            height: 20.0, width: 40.0, padding: 1.0, toggleSize: 20.0, borderRadius: 20.0, value: value,
+            switchStateHandler: switchStateHandler,
           ),
         ],
       ),

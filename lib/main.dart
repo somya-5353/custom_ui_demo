@@ -1,5 +1,6 @@
 import 'package:common_widgets_demo/screens/my_home.dart';
 import 'package:common_widgets_demo/screens/nav_bar_screen.dart';
+import 'package:common_widgets_demo/screens/switch_tile_screen.dart';
 import 'package:common_widgets_demo/widgets/nav_bar_title.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
             toggleableActiveColor: Colors.white,
             highlightColor: Colors.black,
         ),
-      home: MyHome(),
+      home: SwitchTileScreen(),
     );
   }
 }
